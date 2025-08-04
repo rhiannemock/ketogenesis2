@@ -1,0 +1,29 @@
+/* remove white at top of page*/
+body{
+  margin:0;
+  padding:0;
+}
+
+/*font import merriweather*/
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87.5,300..900;1,18..144,87.5,300..900&display=swap');
+
+/*font variations 300 to 900*/
+
+.merriweather-font-value {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/*body*/
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-size: 600;
+  line-height: 1.6;
+  color:#ffffff;
+  background-color: #232429;
+}
+/*header*/
