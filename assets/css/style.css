@@ -1,14 +1,8 @@
-/* remove white at top of page*/
-body{
-  margin:0;
-  padding:0;
-}
-
 /*font import merriweather*/
     @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87.5,300..900;1,18..144,87.5,300..900&display=swap');
 
-/*font variations 300 to 900*/
 
+/*font variations 300 to 900*/
 .merriweather-font-value {
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
@@ -19,11 +13,141 @@ body{
 }
 /*body*/
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
   font-weight: 300;
-  font-size: 600;
-  line-height: 1.6;
   color:#ffffff;
   background-color: #232429;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
 }
+/*class to add to links*/
+.color-orange{
+  color: #de721f;
+  text-decoration:none; /* removes underline from links */
+  transition: color 0.3s ease; /* adds a transition effect */
+}
+
 /*header*/
+.flex-header {
+  display:flex;
+  background-color: #232429;
+  color: #ffffff;
+  align-content:center;/* sets the alignment of the header to center */
+  justify-content: center;/* sets the alignment of the header to center */
+  background-image:url(../../assets/images/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;  /*scales image so responsive*/
+  background-position: center;  /*scales image so responsive*/
+  position: relative;/* sets the position to relative for the overlay */
+  height:20vh; /* sets the height of the header to 20% of the viewport height */
+  box-shadow:0 2px 2px #000405; /* adds a shadow to the header */
+}
+ /* semi-transparent overlay */
+.flex-header::before { /* creates a pseudo-element for the overlay */
+  content: "";/* creates an empty content for the overlay */
+  position: absolute;/* sets the position to absolute for the overlay */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35,36,41,0.5);
+  z-index: 1;/* places the overlay behind the header text */
+}
+/*h1 element in the header for mobile up to 1024px*/
+.flex-header h1{
+  display:flex;
+  justify-content:center;  /*sets the header text to be centered*/
+  align-items:center;  /*serts the header text to be centered*/
+  position: relative;  /*sets the position to relative of the overlay*/
+  z-index: 2;         /*places on top of the overlay*/
+  text-decoration:underline overline #de721f;
+  font-size:7vh;
+  margin-top: 8vh;
+}
+
+/*navigation menu*/
+.flex-header nav {
+  display: flex;
+  position:absolute; /* sets the position to absolute for the navigation menu */
+  background-color:#232429;
+  justify-content: center; /* centers the navigation menu */
+  align-items: center; /* centres the navigation menu vertically */
+  margin-top: 20px; /* adds some space above the navigation menu */
+  width:100%;
+}
+
+
+/*nav*/
+#menu{
+  display:none;/* sets the display to flex for the navigation menu */
+  flex-direction: row;/* sets the direction of the navigation menu to row */
+  align-self:flex-start;/* aligns the navigation menu to the left */
+  justify-content:space-between;
+}
+#menu > a{
+  text-decoration:none;
+  font-weight:bold;
+  color:#de721f;
+  font-family:'Merriweather', serif;
+  font-size:100%;
+  background-color: #2e323f;
+  padding-left:2em;
+  padding-right:2em;  
+}
+
+#menu >a:hover{
+  color:#ffffff;
+  background-color: #de721f;
+  transition: background-color 0.3s ease, color 0.3s ease; /* adds a transition effect */
+}
+  
+/*nav toggle for mobile*/
+#nav-toggle:checked~nav{
+  display:flex;
+  flex-direction:column;
+  align-items:baseline;
+  font-size:1.2rem;
+}
+#nav-toggle{
+  display:none;
+}
+#menu-burger{
+  width:5%;
+  height:auto;
+  display:flex;
+  align-self:flex-end;
+  box-shadow: #000405;
+  margin-top:3px;
+}
+
+
+
+@media screen and (min-width: 1025px) {
+    /*header*/
+    .flex-header {
+        height: 30vh; /* sets the height of the header to 30% of the viewport height */
+    }
+    /*h1 element in the header for mobile up to 1024px*/
+    .flex-header h1{
+        font-size:15vh;
+        margin-top: 10vh;
+    }
+    
+    /*nav*/
+    #menu{
+        display:flex;/* sets the display to flex for the navigation menu */
+        flex-direction: row;/* sets the direction of the navigation menu to row */
+        justify-content:space-evenly;/* centers the navigation menu */
+        align-self:flex-start;/* aligns the navigation menu to the left */
+        box-shadow:#000405;
+        width:fit-content;
+        font-size:2rem; /* sets the font size of the navigation menu */
+    }
+    .nav-toggle-label{
+        display:none; /* hides the burger menu for larger screens */
+    }
+    }
