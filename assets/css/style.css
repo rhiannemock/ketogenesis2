@@ -83,18 +83,14 @@ body {
 
 /*nav*/
 #menu{
-  display:none;/* sets the display to flex for the navigation menu */
-  flex-direction: row;/* sets the direction of the navigation menu to row */
-  align-self:flex-start;/* aligns the navigation menu to the left */
-  justify-content:space-between;
+  display:none;/*hides for smaller screens*/
+  
 }
 #menu > a{
   text-decoration:none;
   font-weight:bold;
   color:#de721f;
-  font-family:'Merriweather', serif;
-  font-size:100%;
-  background-color: #2e323f;
+  background-color: #232429;
   padding-left:2em;
   padding-right:2em;  
 }
@@ -107,23 +103,29 @@ body {
   
 /*nav toggle for mobile*/
 #nav-toggle:checked~nav{
-  display:flex;
-  flex-direction:column;
-  align-items:baseline;
-  font-size:1.2rem;
-}
+  display:flex; /* displays the navigation menu when the toggle is checked */
+  flex-direction: column; /* sets the direction of the navigation menu to column */
+  position:absolute; /* sets the position to absolute for the navigation menu */
+  margin-top:25vh; /* adds some space above the navigation menu */
+  font-size:2rem;
+} 
 #nav-toggle{
   display:none;
 }
 #menu-burger{
-  width:5%;
+  width:8%;
   height:auto;
-  display:flex;
-  align-self:flex-end;
-  box-shadow: #000405;
-  margin-top:3px;
 }
-
+/*body*/
+.wrapper{
+  display:flex;
+  flex-direction:column-reverse;
+  align-items:center;
+  max-width:100%;
+}
+.wrapper img{
+  max-width:100%; 
+}
 
 
 @media screen and (min-width: 1025px) {
@@ -143,11 +145,31 @@ body {
         flex-direction: row;/* sets the direction of the navigation menu to row */
         justify-content:space-evenly;/* centers the navigation menu */
         align-self:flex-start;/* aligns the navigation menu to the left */
-        box-shadow:#000405;
-        width:fit-content;
+        box-shadow:0 2px#000405;
+        width:100%;
         font-size:2rem; /* sets the font size of the navigation menu */
     }
     .nav-toggle-label{
         display:none; /* hides the burger menu for larger screens */
     }
+    .wrapper{
+      display:flex;
+      flex-direction:row-reverse;
+      justify-content:space-evenly;
+      align-items:center;
+      }
+    .wrapper div{
+      margin-top:5vh;
+        max-width:50vw;
+        margin-left:2vw;
+        font-size:1rem;
+      }
     }
+
+  @media screen and (min-width:100px){
+    .wrapper div{ 
+      max-width:50vw;
+      font-size:1.5rem;
+      }    
+  }
+    
