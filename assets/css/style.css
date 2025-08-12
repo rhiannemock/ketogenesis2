@@ -147,6 +147,12 @@ body {
   max-height:15vw;
   margin-left:1vw;
 }
+.footer-wrapper p{
+  font-weight:500;
+  font-size:1.2rem;
+  color:#232429;
+  text-align:center;
+}
 
 /*media queries*/
 @media screen and (min-width: 1025px) {
