@@ -46,6 +46,7 @@ body {
   height:20vh; /* sets the height of the header to 20% of the viewport height */
   box-shadow:0 2px 2px #000405; /* adds a shadow to the header */
 }
+
  /* semi-transparent overlay */
 .flex-header::before { /* creates a pseudo-element for the overlay */
   content: "";/* creates an empty content for the overlay */
@@ -57,6 +58,7 @@ body {
   background-color: rgba(35,36,41,0.5);
   z-index: 1;/* places the overlay behind the header text */
 }
+
 /*h1 element in the header for mobile up to 1024px*/
 .flex-header h1{
   display:flex;
@@ -79,12 +81,8 @@ body {
   margin-top: 20px; /* adds some space above the navigation menu */
   width:100%;
 }
-
-
-/*nav*/
 #menu{
-  display:none;/*hides for smaller screens*/
-  
+  display:none;/*hides for smaller screens*/  
 }
 #menu > a{
   text-decoration:none;
@@ -94,7 +92,6 @@ body {
   padding-left:2em;
   padding-right:2em;  
 }
-
 #menu >a:hover{
   color:#ffffff;
   background-color: #de721f;
@@ -128,23 +125,23 @@ body {
   margin-right:8px;
   padding-bottom:3px;
 }
-
-
 img.keto-diet{
   width:100%;
   height:auto;
   max-width: 50vw;
+  border: 3px solid #de721f; /* adds a border to the image */
 }
 img.keto-macros{
   width:100%;
   height:auto;
   max-width:50vw;
-  }
-
+  border: 3px solid #de721f; /* adds a border to the image */
+}
+/*footer*/
 .footer-wrapper{
   display:flex;
   flex-direction:row-reverse;
-  order:2;
+  order: 1;
   align-items:center;
   justify-content:space-evenly;
   flex-wrap:wrap;
@@ -164,6 +161,12 @@ img.keto-macros{
   color:#232429;
   text-align:center;
 }
+.footer-wrapper h2{
+  font-weight:500;
+  font-size:1.5rem;
+  color:#232429;
+  text-align:center;;
+}
 
 /*media queries*/
 @media screen and (min-width: 1025px) {
@@ -176,7 +179,6 @@ img.keto-macros{
         font-size:15vh;
         margin-top: 10vh;
     }
-    
     /*nav*/
     #menu{
         display:flex;/* sets the display to flex for the navigation menu */
@@ -193,7 +195,6 @@ img.keto-macros{
     .wrapper{
       display:flex;
       flex-direction:row-reverse;
-      justify-content:center;
       align-items:center;
       max-width:100%
     }
@@ -203,29 +204,29 @@ img.keto-macros{
       height:auto;
       color:#ffffff;
       padding:4vw;
-      text-align:justify; /* aligns the text to justify */
+      text-align:center; 
     }
     img.keto-diet{
       width:100%;
       height:auto;
-      max-width: 50vw;
+      max-width: 40vw;
     }
     img.keto-macros{
       width:100%;
       height:auto;
-      max-width:50vw;
+      max-width:40vw;
     }
+    .footer-wrapper img{
+      max-width:6vw;
+      max-height:6vw;
+      margin-left:1vw;
     }
 
-  @media screen and (min-width:1700px){
+  @media screen and (min-width:1600px){
     .wrapper div{ 
       font-size:1.8rem;
       max-width:50vw;
       height:auto;
       }   
-      /*img.keto-macros{
-        width:100%;
-        height:auto;
-      } */
   }
     
