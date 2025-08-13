@@ -50,7 +50,7 @@ body {
   background-size: cover;  /*scales image so responsive*/
   background-position: center;  /*scales image so responsive*/
   position: relative;/* sets the position to relative for the overlay */
-  height:20vh; /* sets the height of the header to 20% of the viewport height */
+  height:15vh; /* sets the height of the header to 20% of the viewport height */
   box-shadow:0 2px 2px #000405; /* adds a shadow to the header */
 }
 
@@ -74,7 +74,7 @@ body {
   position: relative;  /*sets the position to relative of the overlay*/
   z-index: 2;         /*places on top of the overlay*/
   text-decoration:underline overline #de721f;
-  font-size:7vh;
+  font-size:4vh;
   margin-top: 8vh;
 }
 
