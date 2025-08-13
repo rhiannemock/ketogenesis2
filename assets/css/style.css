@@ -167,6 +167,12 @@ img.keto-macros{
   color:#232429;
   text-align:center;;
 }
+.footer-wrapper .email-link{
+  color: #232429; /* sets the color of the email link */
+  text-decoration: none; /* removes underline from the email link */
+  font-weight: bold; /* makes the email link bold */
+  padding-left:3vw;
+}
 
 /*media queries*/
 @media screen and (min-width: 1025px) {
@@ -221,6 +227,11 @@ img.keto-macros{
       max-height:6vw;
       margin-left:1vw;
     }
+    .footer-wrapper .email-link:hover{
+      background-color:#de721f;
+      background-color:#ffffff;
+      transition: background-color 0.3s ease, color 0.3s ease; /* adds a transition effect */
+    }
 
   @media screen and (min-width:1600px){
     .wrapper div{ 
@@ -228,5 +239,5 @@ img.keto-macros{
       max-width:50vw;
       height:auto;
       }   
+    }
   }
-    
