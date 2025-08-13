@@ -37,6 +37,17 @@ body {
   text-decoration: none; /* removes underline from the text link */
   transition: color 0.3s ease; /* adds a transition effect */
 }
+.policy-link{
+  color: #060300; /* sets the color of the text */
+  text-decoration: none; /* removes underline from the text */
+  font-weight: bold; /* makes the text bold */
+}
+.policy-link:hover{
+  color:#232429; /* sets the color of the text link */
+  background-color: #ffffff;
+  text-decoration: none; /* removes underline from the text link */
+  transition: color 0.3s ease; /* adds a transition effect */
+}
 
 /*header*/
 .flex-header {
@@ -110,7 +121,7 @@ body {
   display:flex; /* displays the navigation menu when the toggle is checked */
   flex-direction: column; /* sets the direction of the navigation menu to column */
   position:absolute; /* sets the position to absolute for the navigation menu */
-  margin-top:25vh; /* adds some space above the navigation menu */
+  margin-top:20vh; /* adds some space above the navigation menu */
   font-size:2rem;
 } 
 #nav-toggle{
@@ -182,7 +193,25 @@ img.keto-macros{
   padding-right:3vw;
 }
 
+/*sign up page css*/
+.wrapper form{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  align-items:center;
+  justify-content:center;
+  max-width:100%;
+  background-color:#de721f;
+}
+
 /*media queries*/
+@media screen and (min-width: 768px){
+  #nav-toggle:checked~nav{
+    margin-top:22vh;
+  }
+}
+
 @media screen and (min-width: 1025px) {
     /*header*/
     .flex-header {
