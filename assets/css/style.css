@@ -158,17 +158,17 @@ img.keto-macros{
 .footer-wrapper p{
   font-weight:500;
   font-size:1.2rem;
-  color:#232429;
+  color:#00020b;
   text-align:center;
 }
 .footer-wrapper h2{
   font-weight:500;
   font-size:1.5rem;
-  color:#232429;
+  color:#00020b;
   text-align:center;;
 }
 .footer-wrapper .email-link{
-  color: #232429; /* sets the color of the email link */
+  color: #00020b; /* sets the color of the email link */
   text-decoration: none; /* removes underline from the email link */
   font-weight: bold; /* makes the email link bold */
   padding-left:3vw;
