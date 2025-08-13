@@ -59,23 +59,81 @@
     <section>
         <div class="wrapper"> 
             <div>
-            <h2 class="color-orange">Why not sign up to our emails to get exclusive access to recipes, tips and latest features designed to get you started on your ketogenic journey!</h2>   
+            <h2 class="color-orange">Why not sign up to our emails? </h2> 
+            <p>You will get exclusive access to recipes, tips and latest features. all designed to get you started and support you throughout your ketogenic journey!</p>  
         </div>
     </section>
 
     <section>
         <div class="wrapper">
-            <form action="#" method="post">
+            <form action="https://formdump.codeinstitute.net" method="post">
                 <fieldset>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <button type="submit">Sign Up</button>
+                    <legend>Sign Up</legend>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                                <br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                                <br>
+                            <label for="age">Age:</label>
+                            <select id="age" name="age" required>
+                                <option value="" disabled selected>Select your age group</option>
+                                <option value="18-24">18-24</option>
+                                <option value="25-34">25-34</option>
+                                <option value="35-44">35-44</option>
+                                <option value="45-54">45-54</option>
+                                <option value="55+">55+</option>
+                            </select>
+                    </div>  
+                    <div>
+                        <label for="food-allergies">Do you have any food allergies or intolerances?</label>
+                        <br>
+                        <label for="gluten">Gluten:</label>
+                        <input type="radio" id="gluten" name="gluten" value="yes">
+
+                        <label for="Shellfish">Shellfish:</label>
+                        <input type="radio" id="shellfish" name="shellfish" value="yes">
+
+                        <label for="nuts">Nuts:</label>
+                        <input type="radio" id="nuts" name="nuts" value="yes">
+
+                        <label for="dairy">Dairy:</label>
+                        <input type="radio" id="dairy" name="dairy" value="yes">
+
+                        <label for="eggs">Eggs:</label>
+                        <input type="radio" id="eggs" name="eggs" value="yes">
+
+                        <label for="other">Other:</label>
+                        <input type="text" id="other" name="other" placeholder="Please specify">
+                    </div>
+                    <div>
+                        <label for="experience">How much previous experience do you have with keto?</label>
+                            <br>
+                        <label for="beginner">Beginner</label>
+                        <input type="checkbox" id="beginner" name="experience" value="beginner">
+
+                        <label for="I've-looked-into-it">I've looked into it</label>
+                        <input type="checkbox" id="looked-into-it" name="looked-into-it" value="looked-into-it">
+
+                        <label for="experienced">Experienced</label>
+                        <input type="checkbox" id="experienced" name="experienced" value="experienced">
+                    
+                    </div>
+                    <div>
+                        <label for="achievements">What do you wish to achieve by using the keto diet?</label>
+                        <br>
+                        <textarea id="achievements" name="achievements" rows="8" cols="30" placeholder="e.g. weight loss, lower blood sugar, improved energy levels, better focus"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="reset" value="reset-form"><strong>Reset</strong></button>
+                        <button type="submit" value="sign-up"><strong>Sign Up</strong></button>
+                    </div>
+                    <div>
+                        <p class="privacy-policy">By signing up, you agree to our <a href="privacy-policy.html" target="_blank" class="policy-link">Privacy Policy</a>.</p>
+                    </div>
                 </fieldset>
-                <p class="privacy-policy">By signing up, you agree to our <a href="privacy-policy.html" target="_blank" class="policy-link">Privacy Policy</a>.</p>
             </form>
         </div>
     </section>

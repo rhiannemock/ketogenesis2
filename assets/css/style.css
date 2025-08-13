@@ -203,6 +203,21 @@ img.keto-macros{
   justify-content:center;
   max-width:100%;
   background-color:#de721f;
+  margin-bottom:5vh;
+}
+.wrapper form fieldset{
+  padding: 1vw; /* adds some padding to the fieldset */
+  margin: 1vw; /* adds some margin to the fieldset *//* sets the text color of the fieldset */
+}
+.wrapper form legend{
+  font-weight: bold; /* makes the legend text bold */
+  font-size: 1.5rem; /* sets the font size of the legend */
+  margin-bottom: 1vw; /* adds some space below the legend */
+  color:#00020b;
+}
+.wrapper form label{
+  color:#060300;
+  font-weight:bold;
 }
 
 /*media queries*/
@@ -270,11 +285,13 @@ img.keto-macros{
       transition: background-color 0.3s ease, color 0.3s ease; /* adds a transition effect */
     }
 
+  }
   @media screen and (min-width:1600px){
     .wrapper div{ 
       font-size:1.8rem;
       max-width:50vw;
       height:auto;
-      }   
-    }
-  }
+      } 
+    } 
+    
+  
