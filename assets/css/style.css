@@ -26,8 +26,15 @@ body {
 }
 /*class to add to links*/
 .color-orange{
-  color: #de721f;
-  text-decoration:none; /* removes underline from links */
+  color: #de721f; /* sets the color of the text */
+  text-decoration:none; /* removes underline from the text */
+  font-weight: bold; /* makes the text bold */
+}
+
+.text-link:hover{
+  color: #232429; /* sets the color of the text link */
+  background-color: #ffffff;
+  text-decoration: none; /* removes underline from the text link */
   transition: color 0.3s ease; /* adds a transition effect */
 }
 
