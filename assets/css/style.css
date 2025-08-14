@@ -158,12 +158,13 @@ img.keto-macros{
 /*footer*/
 .footer-wrapper{
   display:flex;
-  flex-direction:row-reverse;
-  order: 1;
+  flex-direction:row;
+  /*order: 1;*/
   align-items:center;
   justify-content:space-evenly;
   flex-wrap:wrap;
   background-color:#de721f;
+  padding-top:6px;
   padding-left:3px;
   padding-right:3px;
   padding-bottom:5px;
