@@ -1,296 +1,434 @@
 /*font import merriweather*/
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87.5,300..900;1,18..144,87.5,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87.5,300..900;1,18..144,87.5,300..900&display=swap');
 
 
 /*font variations 300 to 900*/
 .merriweather-font-value {
-  font-family: "Merriweather", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-/*body*/
-body {
-  margin:0;
-  padding: 0;
-  font-family: "Merriweather", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  color:#ffffff;
-  background-color: #232429;
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-}
-/*class to add to links*/
-.color-orange{
-  color: #de721f; /* sets the color of the text */
-  text-decoration:none; /* removes underline from the text */
-  font-weight: bold; /* makes the text bold */
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
-.text-link:hover{
-  color: #232429; /* sets the color of the text link */
-  background-color: #ffffff;
-  text-decoration: none; /* removes underline from the text link */
-  transition: color 0.3s ease; /* adds a transition effect */
+/*body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #232429;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.policy-link{
-  color: #060300; /* sets the color of the text */
-  text-decoration: none; /* removes underline from the text */
-  font-weight: bold; /* makes the text bold */
+
+/*class to add to links*/
+.color-orange {
+    color: #de721f;
+    /* sets the color of the text */
+    text-decoration: none;
+    /* removes underline from the text */
+    font-weight: bold;
+    /* makes the text bold */
 }
-.policy-link:hover{
-  color:#232429; /* sets the color of the text link */
-  background-color: #ffffff;
-  text-decoration: none; /* removes underline from the text link */
-  transition: color 0.3s ease; /* adds a transition effect */
+
+.text-link:hover {
+    color: #232429;
+    /* sets the color of the text link */
+    background-color: #ffffff;
+    text-decoration: none;
+    /* removes underline from the text link */
+    transition: color 0.3s ease;
+    /* adds a transition effect */
+}
+
+.policy-link {
+    color: #060300;
+    /* sets the color of the text */
+    text-decoration: none;
+    /* removes underline from the text */
+    font-weight: bold;
+    /* makes the text bold */
+}
+
+.policy-link:hover {
+    color: #232429;
+    /* sets the color of the text link */
+    background-color: #ffffff;
+    text-decoration: none;
+    /* removes underline from the text link */
+    transition: color 0.3s ease;
+    /* adds a transition effect */
 }
 
 /*header*/
 .flex-header {
-  display:flex;
-  background-color: #232429;
-  color: #ffffff;
-  align-content:center;/* sets the alignment of the header to center */
-  justify-content: center;/* sets the alignment of the header to center */
-  background-image:url(../../assets/images/logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;  /*scales image so responsive*/
-  background-position: center;  /*scales image so responsive*/
-  position: relative;/* sets the position to relative for the overlay */
-  height:15vh; /* sets the height of the header to 20% of the viewport height */
-  box-shadow:0 2px 2px #000405; /* adds a shadow to the header */
+    display: flex;
+    background-color: #232429;
+    color: #ffffff;
+    align-content: center;
+    /* sets the alignment of the header to center */
+    justify-content: center;
+    /* sets the alignment of the header to center */
+    background-image: url(../../assets/images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*scales image so responsive*/
+    background-position: center;
+    /*scales image so responsive*/
+    position: relative;
+    /* sets the position to relative for the overlay */
+    height: 15vh;
+    /* sets the height of the header to 20% of the viewport height */
+    box-shadow: 0 2px 2px #000405;
+    /* adds a shadow to the header */
 }
 
- /* semi-transparent overlay */
-.flex-header::before { /* creates a pseudo-element for the overlay */
-  content: "";/* creates an empty content for the overlay */
-  position: absolute;/* sets the position to absolute for the overlay */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(35,36,41,0.5);
-  z-index: 1;/* places the overlay behind the header text */
+/* semi-transparent overlay */
+.flex-header::before {
+    /* creates a pseudo-element for the overlay */
+    content: "";
+    /* creates an empty content for the overlay */
+    position: absolute;
+    /* sets the position to absolute for the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 36, 41, 0.5);
+    z-index: 1;
+    /* places the overlay behind the header text */
 }
 
 /*h1 element in the header for mobile up to 1024px*/
-.flex-header h1{
-  display:flex;
-  justify-content:center;  /*sets the header text to be centered*/
-  align-items:center;  /*serts the header text to be centered*/
-  position: relative;  /*sets the position to relative of the overlay*/
-  z-index: 2;         /*places on top of the overlay*/
-  text-decoration:underline overline #de721f;
-  font-size:4vh;
-  margin-top: 8vh;
+.flex-header h1 {
+    display: flex;
+    justify-content: center;
+    /*sets the header text to be centered*/
+    align-items: center;
+    /*serts the header text to be centered*/
+    position: relative;
+    /*sets the position to relative of the overlay*/
+    z-index: 2;
+    /*places on top of the overlay*/
+    text-decoration: underline overline #de721f;
+    font-size: 4vh;
+    margin-top: 8vh;
 }
 
 /*navigation menu*/
 .flex-header nav {
-  display: flex;
-  position:absolute; /* sets the position to absolute for the navigation menu */
-  background-color:#232429;
-  justify-content: center; /* centers the navigation menu */
-  align-items: center; /* centres the navigation menu vertically */
-  margin-top: 20px; /* adds some space above the navigation menu */
-  width:100%;
+    display: flex;
+    position: absolute;
+    /* sets the position to absolute for the navigation menu */
+    background-color: #232429;
+    justify-content: center;
+    /* centers the navigation menu */
+    align-items: center;
+    /* centres the navigation menu vertically */
+    margin-top: 20px;
+    /* adds some space above the navigation menu */
+    width: 100%;
 }
-#menu{
-  display:none;/*hides for smaller screens*/  
+
+#menu {
+    display: none;
+    /*hides for smaller screens*/
 }
-#menu > a{
-  text-decoration:none;
-  font-weight:bold;
-  color:#de721f;
-  background-color: #232429;
-  padding-left:2em;
-  padding-right:2em;  
+
+#menu>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #de721f;
+    background-color: #232429;
+    padding-left: 2em;
+    padding-right: 2em;
 }
-#menu >a:hover{
-  color:#ffffff;
-  background-color: #de721f;
-  transition: background-color 0.3s ease, color 0.3s ease; /* adds a transition effect */
+
+#menu>a:hover {
+    color: #ffffff;
+    background-color: #de721f;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* adds a transition effect */
 }
-  
+
 /*nav toggle for mobile*/
-#nav-toggle:checked~nav{
-  display:flex; /* displays the navigation menu when the toggle is checked */
-  flex-direction: column; /* sets the direction of the navigation menu to column */
-  position:absolute; /* sets the position to absolute for the navigation menu */
-  margin-top:20vh; /* adds some space above the navigation menu */
-  font-size:2rem;
-} 
-#nav-toggle{
-  display:none;
+#nav-toggle:checked~nav {
+    display: flex;
+    /* displays the navigation menu when the toggle is checked */
+    flex-direction: column;
+    /* sets the direction of the navigation menu to column */
+    position: absolute;
+    /* sets the position to absolute for the navigation menu */
+    margin-top: 20vh;
+    /* adds some space above the navigation menu */
+    font-size: 2rem;
 }
-#menu-burger{
-  width:8%;
-  height:auto;
-  margin-top:3px;
+
+#nav-toggle {
+    display: none;
 }
+
+#menu-burger {
+    width: 8%;
+    height: auto;
+    margin-top: 3px;
+}
+
 /*body*/
-.wrapper{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  max-width:100%;
-  margin-left:8px;
-  margin-right:10px;
-  padding-bottom:3px;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 8px;
+    margin-right: 10px;
+    padding-bottom: 3px;
 }
-img.keto-diet{
-  width:100%;
-  height:auto;
-  max-width: 50vw;
-  border: 3px solid #de721f; /* adds a border to the image */
+
+img.keto-diet {
+    width: 100%;
+    height: auto;
+    max-width: 50vw;
+    border: 3px solid #de721f;
+    /* adds a border to the image */
 }
-img.keto-macros{
-  width:100%;
-  height:auto;
-  max-width:50vw;
-  border: 3px solid #de721f; /* adds a border to the image */
+
+.wrapper iframe {
+    width: 330;
+    height: 315;
 }
+
+img.keto-macros {
+    width: 100%;
+    height: auto;
+    max-width: 50vw;
+    border: 3px solid #de721f;
+    /* adds a border to the image */
+}
+
+.wrapper-foods {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /*footer*/
-.footer-wrapper{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-  justify-content:space-evenly;
-  flex-wrap:wrap;
-  background-color:#de721f;
-  padding-top:6px;
-  padding-left:3px;
-  padding-right:3px;
-  padding-bottom:5px;
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #de721f;
+    padding-top: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 5px;
 }
-.footer-wrapper img{
-  max-width:100%;
-  max-height:15vw;
-  margin-left:1vw;
+
+.footer-wrapper img {
+    max-width: 100%;
+    max-height: 15vw;
+    margin-left: 1vw;
 }
-.footer-wrapper p{
-  font-weight:500;
-  font-size:0.8rem;
-  color:#00020b;
-  text-align:center;
+
+.footer-wrapper p {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #00020b;
+    text-align: center;
 }
-.footer-wrapper h2{
-  font-weight:500;
-  font-size:1.5rem;
-  color:#00020b;
-  text-align:center;;
+
+.footer-wrapper h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #00020b;
+    text-align: center;
+    ;
 }
-.footer-wrapper .email-link{
-  color: #00020b; /* sets the color of the email link */
-  text-decoration: none; /* removes underline from the email link */
-  font-weight: bold; /* makes the email link bold */
-  align-items:center;
+
+.footer-wrapper .email-link {
+    color: #00020b;
+    /* sets the color of the email link */
+    text-decoration: none;
+    /* removes underline from the email link */
+    font-weight: bold;
+    /* makes the email link bold */
+    align-items: center;
 }
 
 /*sign up page css*/
-.wrapper form{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content:space-evenly;
-  align-items:center;
-  justify-content:center;
-  max-width:100%;
-  background-color:#de721f;
-  margin-bottom:5vh;
+.wrapper form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #de721f;
+    margin-bottom: 5vh;
 }
-.wrapper form fieldset{
-  padding: 1vw; /* adds some padding to the fieldset */
-  margin: 1vw; /* adds some margin to the fieldset *//* sets the text color of the fieldset */
+
+.wrapper form fieldset {
+    padding: 1vw;
+    /* adds some padding to the fieldset */
+    margin: 1vw;
+    /* adds some margin to the fieldset */
+    /* sets the text color of the fieldset */
 }
-.wrapper form legend{
-  font-weight: bold; /* makes the legend text bold */
-  font-size: 1.5rem; /* sets the font size of the legend */
-  margin-bottom: 1vw; /* adds some space below the legend */
-  color:#00020b;
+
+.wrapper form legend {
+    font-weight: bold;
+    /* makes the legend text bold */
+    font-size: 1.5rem;
+    /* sets the font size of the legend */
+    margin-bottom: 1vw;
+    /* adds some space below the legend */
+    color: #00020b;
 }
-.wrapper form label{
-  color:#060300;
-  font-weight:bold;
+
+.wrapper form label {
+    color: #060300;
+    font-weight: bold;
 }
 
 /*media queries*/
-@media screen and (min-width: 768px){
-  #nav-toggle:checked~nav{
-    margin-top:22vh;
-  }
+@media screen and (min-width: 768px) {
+    #nav-toggle:checked~nav {
+        margin-top: 22vh;
+    }
+
+    .wrapper iframe {
+        width: 430px;
+        height: 315px;
+    }
 }
 
 @media screen and (min-width: 1025px) {
+
     /*header*/
     .flex-header {
-        height: 30vh; /* sets the height of the header to 30% of the viewport height */
-    }
-    /*h1 element in the header for mobile up to 1024px*/
-    .flex-header h1{
-        font-size:15vh;
-        margin-top: 10vh;
-    }
-    /*nav*/
-    #menu{
-        display:flex;/* sets the display to flex for the navigation menu */
-        flex-direction: row;/* sets the direction of the navigation menu to row */
-        justify-content:space-evenly;/* centers the navigation menu */
-        align-self:flex-start;/* aligns the navigation menu to the left */
-        box-shadow:0 2px#000405;
-        width:100%;
-        font-size:2rem; /* sets the font size of the navigation menu */
-    }
-    .nav-toggle-label{
-        display:none; /* hides the burger menu for larger screens */
-    }
-    .wrapper{
-      display:flex;
-      flex-direction:row-reverse;
-      align-items:center;
-      max-width:100%
-    }
-    .wrapper div{
-      font-size:1.2rem;
-      width:50vw;
-      height:auto;
-      color:#ffffff;
-      padding:4vw;
-      text-align:center; 
-    }
-    img.keto-diet{
-      width:100%;
-      height:auto;
-      max-width: 40vw;
-    }
-    img.keto-macros{
-      width:100%;
-      height:auto;
-      max-width:40vw;
-    }
-    .footer-wrapper img{
-      max-width:6vw;
-      max-height:6vw;
-      margin-left:1vw;
-    }
-    .footer-wrapper .email-link:hover{
-      background-color:#de721f;
-      background-color:#ffffff;
-      transition: background-color 0.3s ease, color 0.3s ease; /* adds a transition effect */
+        height: 30vh;
+        /* sets the height of the header to 30% of the viewport height */
     }
 
-  }
-  @media screen and (min-width:1600px){
-    .wrapper div{ 
-      font-size:1.8rem;
-      max-width:50vw;
-      height:auto;
-      } 
-    } 
-    
-  
+    /*h1 element in the header for mobile up to 1024px*/
+    .flex-header h1 {
+        font-size: 15vh;
+        margin-top: 10vh;
+    }
+
+    /*nav*/
+    #menu {
+        display: flex;
+        /* sets the display to flex for the navigation menu */
+        flex-direction: row;
+        /* sets the direction of the navigation menu to row */
+        justify-content: space-evenly;
+        /* centers the navigation menu */
+        align-self: flex-start;
+        /* aligns the navigation menu to the left */
+        box-shadow: 0 2px#000405;
+        width: 100%;
+        font-size: 2rem;
+        /* sets the font size of the navigation menu */
+    }
+
+    .nav-toggle-label {
+        display: none;
+        /* hides the burger menu for larger screens */
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 100%
+    }
+
+    .wrapper div {
+        font-size: 1.2rem;
+        width: 50vw;
+        height: auto;
+        color: #ffffff;
+        padding: 4vw;
+        text-align: center;
+    }
+
+    img.keto-diet {
+        width: 100%;
+        height: auto;
+        max-width: 40vw;
+    }
+
+    img.keto-macros {
+        width: 100%;
+        height: auto;
+        max-width: 40vw;
+    }
+
+    /*footer*/
+    .footer-wrapper img {
+        max-width: 6vw;
+        max-height: 6vw;
+        margin-left: 1vw;
+    }
+
+    .footer-wrapper .email-link:hover {
+        background-color: #de721f;
+        background-color: #ffffff;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        /* adds a transition effect */
+    }
+
+    /*about keto page*/
+    .wrapper-foods iframe {
+        width: 500px;
+        height: 315px;
+        margin-top: 3vw;
+    }
+
+    .wrapper-foods {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .wrapper-foods div {
+        max-width: 40vw;
+    }
+    .wrapper-foods img{
+        border:solid 3px #de721f;
+    }
+    .wrapper-foods .meat-section{
+        margin-top:3vh;
+    }
+}
+
+
+@media screen and (min-width:1600px) {
+
+    /*body for extra large screens*/
+    .wrapper div {
+        font-size: 2rem;
+        max-width: 50vw;
+        height: auto;
+    }
+
+    /*about keto page*/
+    .wrapper iframe {
+        width: 680px;
+        height: 515px;
+    }
+}

@@ -5,77 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rhianne Mockridge">
-    
-     <!--stylesheet -->
+
+    <!--stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--meta tags for search engines-->
     <meta name="description" content="KetoGenesis - Your guide to the ketogenic lifestyle. Discover recipes, 
     tips, and resources for a successful keto journey.">
     <meta name="keywords" content="Keto, Ketogenic, Low Carb, High Fat, Recipes, Health, Wellness">
- 
+
     <!--favicon links-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  
+
     <!--title-->
     <title>KetoGenesis</title>
 </head>
 
 <body>
     <!--header------>
-<header>
-    <div class="flex-header">
-        
-        <div>
-            <h1>KetoGenesis</h1>  
-        </div> 
-    </div>        
-</header>
+    <header>
+        <div class="flex-header">
 
-   
-
-
-<!----navigation toggle for mobile--->
-    <input type="checkbox" id="nav-toggle" name="nav-toggle">
-    <label for="nav-toggle" class="nav-toggle-label"><img src="assets/images/menu-burger.png"
-     alt="image for navigation menu by by pancaza on flaticon" aria-label="open and close navigation menu" id ="menu-burger"></label>
-
-<!--nav--------> 
-   <nav id="menu">
-            <a href="index.html">Home</a>
-            <a href="about-keto.html">About Keto</a>
-            <a href="sign-up.html">Sign Up</a>
-            <a href="recipes.html">Recipes</a>  
-    </nav>
-<!---end of nav----->
-
-</header>
-
-<!---main content---->
-<main>
-   
-    <section>
-        <div class="wrapper"> 
             <div>
-            <h2 class="color-orange">Why not sign up to our emails? </h2> 
-            <p>You will get exclusive access to recipes, tips and latest features. all designed to get you started and support you throughout your ketogenic journey!</p>  
+                <h1>KetoGenesis</h1>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <section>
-        <div class="wrapper">
-            <form action="https://formdump.codeinstitute.net" method="post">
-                <fieldset>
-                    <legend>Sign Up</legend>
+
+
+
+    <!----navigation toggle for mobile--->
+    <input type="checkbox" id="nav-toggle" name="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label"><img src="assets/images/menu-burger.png" alt="image for navigation menu by by pancaza on flaticon" aria-label="open and close navigation menu" id="menu-burger"></label>
+
+    <!--nav-------->
+    <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="about-keto.html">About Keto</a>
+        <a href="sign-up.html">Sign Up</a>
+        <a href="recipes.html">Recipes</a>
+    </nav>
+    <!---end of nav----->
+
+    </header>
+
+    <!---main content---->
+    <main>
+
+        <section>
+            <div class="wrapper">
+                <div>
+                    <h2 class="color-orange">Why not sign up to our emails? </h2>
+                    <p>You will get exclusive access to recipes, tips and latest features. all designed to get you started and support you throughout your ketogenic journey!</p>
+                </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <form action="https://formdump.codeinstitute.net" method="post">
+                    <fieldset>
+                        <legend>Sign Up</legend>
                         <div>
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" required>
-                                <br>
+                            <br>
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required>
-                                <br>
+                            <br>
                             <label for="age">Age:</label>
                             <select id="age" name="age" required>
                                 <option value="" disabled selected>Select your age group</option>
@@ -85,85 +84,86 @@
                                 <option value="45-54">45-54</option>
                                 <option value="55+">55+</option>
                             </select>
-                    </div>  
-                    <div>
-                        <label for="food-allergies">Do you have any food allergies or intolerances?</label>
-                        <br>
-                        <label for="gluten">Gluten:</label>
-                        <input type="radio" id="gluten" name="gluten" value="yes">
-
-                        <label for="Shellfish">Shellfish:</label>
-                        <input type="radio" id="shellfish" name="shellfish" value="yes">
-
-                        <label for="nuts">Nuts:</label>
-                        <input type="radio" id="nuts" name="nuts" value="yes">
-
-                        <label for="dairy">Dairy:</label>
-                        <input type="radio" id="dairy" name="dairy" value="yes">
-
-                        <label for="eggs">Eggs:</label>
-                        <input type="radio" id="eggs" name="eggs" value="yes">
-
-                        <label for="other">Other:</label>
-                        <input type="text" id="other" name="other" placeholder="Please specify">
-                    </div>
-                    <div>
-                        <label for="experience">How much previous experience do you have with keto?</label>
+                        </div>
+                        <div>
+                            <label for="food-allergies">Do you have any food allergies or intolerances?</label>
                             <br>
-                        <label for="beginner">Beginner</label>
-                        <input type="checkbox" id="beginner" name="experience" value="beginner">
+                            <label for="gluten">Gluten:</label>
+                            <input type="radio" id="gluten" name="gluten" value="yes">
 
-                        <label for="I've-looked-into-it">I've looked into it</label>
-                        <input type="checkbox" id="looked-into-it" name="looked-into-it" value="looked-into-it">
+                            <label for="Shellfish">Shellfish:</label>
+                            <input type="radio" id="shellfish" name="shellfish" value="yes">
 
-                        <label for="experienced">Experienced</label>
-                        <input type="checkbox" id="experienced" name="experienced" value="experienced">
-                    
-                    </div>
-                    <div>
-                        <label for="achievements">What do you wish to achieve by using the keto diet?</label>
-                        <br>
-                        <textarea id="achievements" name="achievements" rows="8" cols="30" placeholder="e.g. weight loss, lower blood sugar, improved energy levels, better focus"></textarea>
-                    </div>
+                            <label for="nuts">Nuts:</label>
+                            <input type="radio" id="nuts" name="nuts" value="yes">
 
-                    <div>
-                        <button type="reset" value="reset-form"><strong>Reset</strong></button>
-                        <button type="submit" value="sign-up" onclick="alert('Form submitted thank you!')"><strong>Sign Up</strong></button>
-                    </div>
-                    <div>
-                        <p class="privacy-policy">By signing up, you agree to our <a href="privacy-policy.html" target="_blank" class="policy-link">Privacy Policy</a>.</p>
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-    </section>
+                            <label for="dairy">Dairy:</label>
+                            <input type="radio" id="dairy" name="dairy" value="yes">
 
-</main>
+                            <label for="eggs">Eggs:</label>
+                            <input type="radio" id="eggs" name="eggs" value="yes">
 
-<!---footer----->
+                            <label for="other">Other:</label>
+                            <input type="text" id="other" name="other" placeholder="Please specify">
+                        </div>
+                        <div>
+                            <label for="experience">How much previous experience do you have with keto?</label>
+                            <br>
+                            <label for="beginner">Beginner</label>
+                            <input type="checkbox" id="beginner" name="experience" value="beginner">
+
+                            <label for="I've-looked-into-it">I've looked into it</label>
+                            <input type="checkbox" id="looked-into-it" name="looked-into-it" value="looked-into-it">
+
+                            <label for="experienced">Experienced</label>
+                            <input type="checkbox" id="experienced" name="experienced" value="experienced">
+
+                        </div>
+                        <div>
+                            <label for="achievements">What do you wish to achieve by using the keto diet?</label>
+                            <br>
+                            <textarea id="achievements" name="achievements" rows="8" cols="30" placeholder="e.g. weight loss, lower blood sugar, improved energy levels, better focus"></textarea>
+                        </div>
+
+                        <div>
+                            <button type="reset" value="reset-form"><strong>Reset</strong></button>
+                            <button type="submit" value="sign-up" onclick="alert('Form submitted thank you!')"><strong>Sign Up</strong></button>
+                        </div>
+                        <div>
+                            <p class="privacy-policy">By signing up, you agree to our <a href="privacy-policy.html" target="_blank" class="policy-link">Privacy Policy</a>.</p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!---footer----->
     <footer>
         <div class="footer-wrapper">
-            
+
             <div class="social-media">
                 <h2>Follow us!</h2>
-                    <a href="https://www.twitter.com" id="twitter" target="_blank" aria-label="twitter link"><img src="assets/images/twitter-logo.png" alt="twitter"></a>
-                    <a href="https://www.facebook.com" id="facebook" target="_blank" aria-label="facebook link"><img src="assets/images/fb-logo.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com" id="instagram"  target="_blank" aria-label="instagram link"><img src="assets/images/insta-logo.png" alt="instagram"></a>  
-                    <a href="https://www.tiktok.com" id="tiktok" target="_blank" aria-label="tiktok link"><img src="assets/images/tiktok-logo.png" alt="tiktok"></a> 
+                <a href="https://www.twitter.com" id="twitter" target="_blank" aria-label="twitter link"><img src="assets/images/twitter-logo.png" alt="twitter"></a>
+                <a href="https://www.facebook.com" id="facebook" target="_blank" aria-label="facebook link"><img src="assets/images/fb-logo.png" alt="facebook"></a>
+                <a href="https://www.instagram.com" id="instagram" target="_blank" aria-label="instagram link"><img src="assets/images/insta-logo.png" alt="instagram"></a>
+                <a href="https://www.tiktok.com" id="tiktok" target="_blank" aria-label="tiktok link"><img src="assets/images/tiktok-logo.png" alt="tiktok"></a>
             </div>
             <div class="printables">
                 <h2>Free Printables!</h2>
-                    <a href="assets/downloads/keto-shopping-list.jpg" target="_blank"><img src="assets/downloads/keto-shopping-list.jpg" alt="Keto shopping list" aria-label="keto shopping list image"></a>
-                    <a href="assets/downloads/meal-log.jpg" target="_blank"><img src="assets/downloads/meal-log.jpg" alt="keto meal log" aria-label="keto meal log"></a>
-                    <a href="assets/downloads/meal-plan-example.jpg" target="_blank"><img src="assets/downloads/meal-plan-example.jpg" alt="keto meal plan example" aria-label="keto meal plan example"></a>
+                <a href="assets/downloads/keto-shopping-list.jpg" target="_blank"><img src="assets/downloads/keto-shopping-list.jpg" alt="Keto shopping list" aria-label="keto shopping list image"></a>
+                <a href="assets/downloads/meal-log.jpg" target="_blank"><img src="assets/downloads/meal-log.jpg" alt="keto meal log" aria-label="keto meal log"></a>
+                <a href="assets/downloads/meal-plan-example.jpg" target="_blank"><img src="assets/downloads/meal-plan-example.jpg" alt="keto meal plan example" aria-label="keto meal plan example"></a>
             </div>
             <div>
                 <p>&copy; 2023 KetoGenesis. All rights reserved.</p>
-                
+
                 <a href="mailto:rhianne.mock@gmail.com" class="email-link">Email: rhianne.mock@gmail.com</a>
             </div>
         </div>
     </footer>
 
 </body>
+
 </html>
