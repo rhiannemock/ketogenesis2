@@ -45,7 +45,7 @@ body {
     transition: color 0.3s ease;
     /* adds a transition effect */
 }
-
+/*policy link*/
 .policy-link {
     color: #060300;
     /* sets the color of the text */
@@ -133,6 +133,7 @@ body {
     margin-top: 20px;
     /* adds some space above the navigation menu */
     width: 100%;
+    border:3px solid #de721f;
 }
 
 #menu {
@@ -166,17 +167,21 @@ body {
     /* sets the position to absolute for the navigation menu */
     margin-top: 20vh;
     /* adds some space above the navigation menu */
+    margin-left:8px;
     font-size: 2rem;
+    border:3px solid #de721f;
 }
 
 #nav-toggle {
     display: none;
 }
 
-#menu-burger {
-    width: 8%;
-    height: auto;
-    margin-top: 3px;
+.nav-toggle-label {
+    font-size:1.2rem;
+    margin-top: 12px;
+    margin-left:8px;
+    border:3px solid #de721f;
+    width:60px;
 }
 
 /*body*/
@@ -199,11 +204,6 @@ img.keto-diet {
     /* adds a border to the image */
 }
 
-.wrapper iframe {
-    width: 330;
-    height: 315;
-}
-
 img.keto-macros {
     width: 100%;
     height: auto;
@@ -212,13 +212,7 @@ img.keto-macros {
     /* adds a border to the image */
 }
 
-.wrapper-foods {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 
 /*footer*/
 .footer-wrapper {
@@ -301,10 +295,31 @@ img.keto-macros {
     font-weight: bold;
 }
 
+/*About keto page*/
+.wrapper-foods {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left:8px;
+    margin-right:10px;
+}
+.wrapper-foods img{
+    max-width:310px;
+    border:solid 3px #de721f;
+    margin-top:5px;
+}
+.wrapper-foods iframe {
+    width: 310;
+    height: 250;
+    border:solid 3px #de721f;
+}
+
 /*media queries*/
 @media screen and (min-width: 768px) {
     #nav-toggle:checked~nav {
-        margin-top: 22vh;
+        margin-top: 20vh;
     }
 
     .wrapper iframe {
@@ -392,7 +407,7 @@ img.keto-macros {
 
     /*about keto page*/
     .wrapper-foods iframe {
-        width: 500px;
+        width: 450px;
         height: 315px;
         margin-top: 3vw;
     }
@@ -404,16 +419,17 @@ img.keto-macros {
         align-items: center;
         flex-wrap: wrap;
     }
-
+/*about keto section*/
     .wrapper-foods div {
         max-width: 40vw;
+        margin-top:8px;
+        font-size:1.2rem;
     }
     .wrapper-foods img{
+        max-width:100%;
         border:solid 3px #de721f;
     }
-    .wrapper-foods .meat-section{
-        margin-top:3vh;
-    }
+    
 }
 
 
@@ -430,5 +446,8 @@ img.keto-macros {
     .wrapper iframe {
         width: 680px;
         height: 515px;
+    }
+    .wrapper-foods{
+        font-size:2rem;
     }
 }
