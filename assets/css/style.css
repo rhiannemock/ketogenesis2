@@ -279,17 +279,21 @@ img.keto-macros {
     border-radius:.12rem;
 }
 .wrapper input-control:focus{
-    background-color:#fffffa;
+    background-color:#ababa1;
     border-color:#060300;
 }
 .wrapper .buttons button{
-    font-size:1.2rem;
+    font-size:0.8rem;
     color:#232429;
     box-shadow:0 0 0 3px #060300;
-    background-color: #fffffa;
-    width:8vw;
-    height:8vh;
+    background-color: #ababa1;
+    width:5vw;
+    height:5vh;
     border-radius:4px;
+}
+.wrapper .buttons button:hover{
+ color:#fff;
+ background-color:#232429;
 }
 
 .wrapper form fieldset {
@@ -518,6 +522,17 @@ div #my-read-more{
     text-align:center;
     font-size:1.2rem;
     }
+
+    /*sign up page*/
+    .wrapper .buttons button{
+    font-size:1.2rem;
+    color:#232429;
+    box-shadow:0 0 0 3px #060300;
+    background-color: #fffffa;
+    width:8vw;
+    height:8vh;
+    border-radius:4px;
+}
 }
 
 
