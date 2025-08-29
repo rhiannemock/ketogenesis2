@@ -296,7 +296,9 @@ img.keto-macros {
     display: flex;
     flex-direction:column;
     flex-wrap: wrap; 
-    text-align:center;  
+    text-align:center; 
+    margin-left:3px;
+    margin-right:3px; 
 }
 .wrapper-foods iframe {
     width: 310px;
@@ -311,6 +313,8 @@ img.keto-macros {
     width:100%;
     height:auto;
     text-align:center;
+    margin-left: 3px;
+    margin-right:3px;
 }
 .wrapper-foods-2 img{
     width:310px;
@@ -522,6 +526,6 @@ img.keto-macros {
     .wrapper-foods iframe {
         width: 750px;
         height: 650px;
-        margin-top:8vh;
+        margin-top:12vh;
     }
 }
