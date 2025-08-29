@@ -268,6 +268,29 @@ img.keto-macros {
     background-color: #de721f;
     margin-bottom: 5vh;
 }
+.wrapper input-control{
+    border:2px solid #232429;
+    box-shadow:0 1px 3px #000405;
+    display:block;
+    width:100%;
+    padding:.375rem .75rem;
+    line-height:1.6;
+    background-clip:padding-box;
+    border-radius:.12rem;
+}
+.wrapper input-control:focus{
+    background-color:#fffffa;
+    border-color:#060300;
+}
+.wrapper .buttons button{
+    font-size:1.2rem;
+    color:#232429;
+    box-shadow:0 0 0 3px #060300;
+    background-color: #fffffa;
+    width:8vw;
+    height:8vh;
+    border-radius:4px;
+}
 
 .wrapper form fieldset {
     padding: 1vw;
