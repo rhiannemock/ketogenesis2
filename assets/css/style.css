@@ -115,9 +115,9 @@ body {
     /*sets the position to relative of the overlay*/
     z-index: 2;
     /*places on top of the overlay*/
-    text-decoration: underline overline #de721f;
     font-size: 4vh;
     margin-top: 8vh;
+    text-decoration:underline #de721f;
 }
 
 /*navigation menu*/
