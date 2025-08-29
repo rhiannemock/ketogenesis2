@@ -317,6 +317,14 @@ img.keto-macros {
     height:auto;
     border:3px solid #de721f;
 }
+.qanda{
+    border:3px solid #de721f;
+    width:100%;
+    margin-bottom:5px;
+}
+.qanda h1{
+    text-align:center;
+}
 /*media queries*/
 @media screen and (min-width: 768px) {
     #nav-toggle:checked~nav {
@@ -407,9 +415,10 @@ img.keto-macros {
 
     /*about keto page*/
     .wrapper-foods iframe {
-        width: 650px;
-        height: 400px;
-        margin-top: 3vw;
+        width: 400px;
+        height: 300px;
+        margin-top: 13vh;
+        margin-right:5vw;
     }
 
     .wrapper-foods {
@@ -417,6 +426,7 @@ img.keto-macros {
         flex-direction: row-reverse;
         justify-content:flex-start;
         text-align:center;
+        align-items:center;
     }
 
     .wrapper-foods div {
@@ -474,8 +484,9 @@ img.keto-macros {
 
     /*about keto page*/
     .wrapper-foods iframe {
-        max-width: 1000px;
-        max-height: 750px;
+        width: 650px;
+        height: 550px;
+        margin-top:8vh;
     }
     .wrapper-foods div{
         font-size:2rem;
@@ -505,5 +516,12 @@ img.keto-macros {
         width: 100%;
         height: auto;
         max-width: 50vw;
+    }
+}
+@media screen and (min-width:1850px){
+    .wrapper-foods iframe {
+        width: 750px;
+        height: 650px;
+        margin-top:8vh;
     }
 }
