@@ -268,9 +268,8 @@ img.keto-macros {
     background-color: #de721f;
     margin-bottom: 5vh;
 }
-.wrapper input-control{
+.wrapper div input{
     border:2px solid #232429;
-    box-shadow:0 1px 3px #000405;
     display:block;
     width:100%;
     padding:.375rem .75rem;
@@ -278,7 +277,7 @@ img.keto-macros {
     background-clip:padding-box;
     border-radius:.12rem;
 }
-.wrapper input-control:focus{
+.wrapper div input:focus{
     background-color:#ababa1;
     border-color:#060300;
 }
@@ -287,8 +286,8 @@ img.keto-macros {
     color:#232429;
     box-shadow:0 0 0 3px #060300;
     background-color: #ababa1;
-    width:5vw;
-    height:5vh;
+    width:65px;
+    height:25px;
     border-radius:4px;
 }
 .wrapper .buttons button:hover{
@@ -527,11 +526,11 @@ div #my-read-more{
     .wrapper .buttons button{
     font-size:1.2rem;
     color:#232429;
-    box-shadow:0 0 0 3px #060300;
-    background-color: #fffffa;
-    width:8vw;
-    height:8vh;
-    border-radius:4px;
+    box-shadow:0 0 0 2px #060300;
+    background-color:#ababa1;
+    width:95px;
+    height:45px;
+    border-radius:2px;
 }
 }
 
@@ -589,6 +588,26 @@ div #my-read-more{
     text-align:center;
     font-size:2rem;
     }
+     /*sign up page*/
+    .wrapper .buttons button{
+    font-size:2rem;
+    color:#232429;
+    box-shadow:0 0 0 2px #060300;
+    background-color:#ababa1;
+    width:150px;
+    height:85px;
+    border-radius:2px;
+}
+.wrapper div textarea{
+    width:600px;
+    height:500px;
+    font-size:1.6rem;
+}
+.wrapper div input{
+font-size:1.6rem;
+    height:50px;
+}
+
 }
 @media screen and (min-width:1850px){
     .wrapper-foods iframe {
