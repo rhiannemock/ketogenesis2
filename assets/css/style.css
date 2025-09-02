@@ -147,7 +147,6 @@ body {
     font-weight: bold;
     color: #de721f;
     background-color: #2d2d2e;
-    width:25%;
     padding-left: 2em;
     padding-right: 2em;
 }
@@ -405,6 +404,9 @@ div #my-read-more{
         font-size: 2rem;
         /* sets the font size of the navigation menu */
     }
+    #menu a{
+        width:25%;
+    }
 
     .nav-toggle-label {
         display: none;
@@ -498,7 +500,7 @@ div #my-read-more{
     .wrapper-foods-2 img{
         width:100%;
         height:auto;
-        max-width:55vw;
+        max-width:40vw;
         margin-top:5vh;
     }
     .wrapper-foods .box-1{
@@ -519,8 +521,9 @@ div #my-read-more{
     }
     /*questions and answers*/
     .qanda{
-    width:98%;
     padding-left:5px;
+    padding-right:5px;
+    padding-bottom:10px;
     text-align:center;
     font-size:1.2rem;
     }
