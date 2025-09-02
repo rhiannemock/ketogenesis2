@@ -40,7 +40,7 @@ body {
 .text-link:hover {
     color: #232429;
     /* sets the color of the text link */
-    background-color: #2d2d2e;
+    /*background-color: #2d2d2e;*/
     text-decoration: none;
     /* removes underline from the text link */
     transition: color 0.3s ease;
@@ -147,6 +147,7 @@ body {
     font-weight: bold;
     color: #de721f;
     background-color: #2d2d2e;
+    width:25%;
     padding-left: 2em;
     padding-right: 2em;
 }
