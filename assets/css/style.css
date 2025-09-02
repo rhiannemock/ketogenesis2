@@ -257,62 +257,40 @@ img.keto-macros {
 }
 
 /*sign up page css*/
-.wrapper form {
+.wrapper-form form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
     background-color: #de721f;
     margin-bottom: 5vh;
 }
-.wrapper div input{
+.wrapper-form div input{
     border:2px solid #232429;
-    display:block;
     width:100%;
     padding:.375rem .75rem;
     line-height:1.6;
     background-clip:padding-box;
-    border-radius:.12rem;
+    border-radius:4px;
 }
-.wrapper div input:focus{
+.wrapper-form div input:focus{
     background-color:#ababa1;
     border-color:#060300;
 }
-.wrapper .buttons button{
+.wrapper-form .buttons button{
     font-size:0.8rem;
     color:#232429;
-    box-shadow:0 0 0 3px #060300;
+    box-shadow:0 0 0 2px #060300;
     background-color: #ababa1;
     width:65px;
     height:25px;
     border-radius:4px;
 }
-.wrapper .buttons button:hover{
+.wrapper-form .buttons button:hover{
  color:#fff;
  background-color:#232429;
 }
-
-.wrapper form fieldset {
-    padding: 1vw;
-    /* adds some padding to the fieldset */
-    margin: 1vw;
-    /* adds some margin to the fieldset */
-}
-
-.wrapper form legend {
-    font-weight: bold;
-    /* makes the legend text bold */
-    font-size: 1.5rem;
-    /* sets the font size of the legend */
-    margin-bottom: 1vw;
-    /* adds some space below the legend */
-    color: #00020b;
-}
-
-.wrapper form label {
+.wrapper-form form label {
     color: #060300;
     font-weight: bold;
 }
@@ -523,7 +501,7 @@ div #my-read-more{
     }
 
     /*sign up page*/
-    .wrapper .buttons button{
+    .wrapper-form .buttons button{
     font-size:1.2rem;
     color:#232429;
     box-shadow:0 0 0 2px #060300;
@@ -582,14 +560,16 @@ div #my-read-more{
     /*questions and answers*/
     .qanda{
     border:3px solid #de721f;
-    width:98%;
-    margin:5px 5px 5px 5px;
+    width:94%;
+    margin-top:5px;
+    margin-bottom:5px;
     padding-left:5px;
+    padding-right:5px;
     text-align:center;
     font-size:2rem;
     }
      /*sign up page*/
-    .wrapper .buttons button{
+    .wrapper-form .buttons button{
     font-size:2rem;
     color:#232429;
     box-shadow:0 0 0 2px #060300;
@@ -598,14 +578,17 @@ div #my-read-more{
     height:85px;
     border-radius:2px;
 }
-.wrapper div textarea{
+.wrapper-form div textarea{
     width:600px;
     height:500px;
     font-size:1.6rem;
 }
-.wrapper div input{
+.wrapper-form div input{
 font-size:1.6rem;
     height:50px;
+}
+.wrapper-form div{
+    font-size:2rem;
 }
 
 }
