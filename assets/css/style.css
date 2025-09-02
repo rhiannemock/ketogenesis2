@@ -20,7 +20,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     color: #ffffff;
-    background-color: #232429;
+    background-color:#2d2d2e ;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@ body {
 .text-link:hover {
     color: #232429;
     /* sets the color of the text link */
-    background-color: #ffffff;
+    background-color: #2d2d2e;
     text-decoration: none;
     /* removes underline from the text link */
     transition: color 0.3s ease;
@@ -125,7 +125,7 @@ body {
     display: flex;
     position: absolute;
     /* sets the position to absolute for the navigation menu */
-    background-color: #232429;
+    background-color: #2d2d2e;
     justify-content: center;
     /* centers the navigation menu */
     align-items: center;
@@ -145,7 +145,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     color: #de721f;
-    background-color: #232429;
+    background-color: #2d2d2e;
     padding-left: 2em;
     padding-right: 2em;
 }
@@ -194,13 +194,17 @@ body {
     max-width: 100%;
     text-align:center;
 }
-
+.wrapper .text-box{
+    background-color:#232429;
+    box-shadow:0 1px 3px#00020b;
+    margin:20px 20px 20px 20px;
+}
 img.keto-diet {
     width: 100%;
     height: auto;
     max-width: 80vw;
     border: 3px solid #de721f;
-    align-items:center
+    align-items:center;
 }
 
 img.keto-macros {
@@ -210,6 +214,7 @@ img.keto-macros {
     border: 3px solid #de721f;
     align-items:center;
 }
+
 
 /*footer*/
 .footer-wrapper {
@@ -304,6 +309,12 @@ img.keto-macros {
     margin-left:3px;
     margin-right:3px; 
 }
+.wrapper-foods .text-box{
+    background-color:#232429;
+    box-shadow:0 1px 3px #00020b;
+    margin:20px 20px 20px 20px;
+
+}
 .wrapper-foods iframe {
     width: 310px;
     height: auto;
@@ -320,6 +331,11 @@ img.keto-macros {
     margin-left: 3px;
     margin-right:3px;
 }
+.wrapper-foods-2 .text-box{
+    background-color:#232429;
+    box-shadow:0 1px 3px #00020b;
+    margin:20px 20px 20px 20px;
+}
 .wrapper-foods-2 img{
     width:310px;
     height:auto;
@@ -333,6 +349,7 @@ img.keto-macros {
     padding-left:5px;
     text-align:center;
 }
+
 div #my-read-more{
     display:none;
 }
@@ -448,6 +465,14 @@ div #my-read-more{
         text-align:center;
         align-items:center;
     }
+    .wrapper-foods-2 .text-box{
+    background-color:#232429;
+    box-shadow:0 1px 3px #00020b;
+    margin:20px 20px 20px 20px;
+}
+.wrapper-foods-2 .pyramid{
+    margin-right:10px;
+}
 
     .wrapper-foods div {
         font-size: 1.2rem;
@@ -464,7 +489,7 @@ div #my-read-more{
 
     .wrapper-foods-2 div {
         font-size: 1.2rem;
-        max-width:45vw;
+        max-width:40vw;
         color: #ffffff;
         padding: 2vw;
     }
@@ -492,9 +517,7 @@ div #my-read-more{
     }
     /*questions and answers*/
     .qanda{
-    border:3px solid #de721f;
     width:98%;
-    margin:5px 5px 5px 5px;
     padding-left:5px;
     text-align:center;
     font-size:1.2rem;
@@ -517,7 +540,7 @@ div #my-read-more{
 
     /*body for extra large screens*/
     .wrapper div {
-        font-size: 2.5rem;
+        font-size: 2rem;
         max-width: 50vw;
         height: auto;
     }
@@ -590,8 +613,8 @@ font-size:1.6rem;
 .wrapper-form div{
     font-size:2rem;
 }
-
 }
+
 @media screen and (min-width:1850px){
     .wrapper-foods iframe {
         width: 750px;
