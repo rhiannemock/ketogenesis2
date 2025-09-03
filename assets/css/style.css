@@ -21,6 +21,8 @@ body {
     font-weight: 300;
     color: #ffffff;
     background-image:url("../../assets/images/background3.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
     background-color:#2d2d2e ;
     min-height: 100vh;
     display: flex;
