@@ -472,7 +472,7 @@ div #my-read-more{
     .wrapper-foods {
         display: flex;
         flex-direction: row-reverse;
-        justify-content:center;
+        justify-content:space-around;
         text-align:center;
         align-items:center;
     }
@@ -576,13 +576,15 @@ div #my-read-more{
     }
     .wrapper-foods-2 img{
         align-items:center;
-        width:1124px;
-        height:750px;
+        max-width:1124px;
+        max-height:750px;
     }
-    .wrapper-foods-2 .pyramid{
+    .wrapper-foods-2 .pyramid-chart{
         margin-top:10vh;
-        width:1000px;
-        height:auto;
+        width:100%;
+    }
+    .wrapper-foods-2 div .pyramid{
+        margin-left:70px;
     }
     img.keto-diet {
         margin-top:30vh;
@@ -600,11 +602,10 @@ div #my-read-more{
     /*questions and answers*/
     .qanda{
     border:3px solid #de721f;
-    width:94%;
-    margin-top:5px;
-    margin-bottom:5px;
-    padding-left:5px;
-    padding-right:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
     text-align:center;
     font-size:2rem;
     }
@@ -630,7 +631,10 @@ font-size:1.6rem;
 .wrapper-form div{
     font-size:2rem;
 }
-.footer-wrapper div{
+.footer-wrapper div p{
+    font-size:2rem;
+}
+.footr-wrapper div a{
     font-size:2rem;
 }
 }
