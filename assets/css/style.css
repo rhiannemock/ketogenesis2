@@ -323,7 +323,9 @@ footer{
     flex-wrap: wrap; 
     text-align:center; 
     margin-left:3px;
-    margin-right:3px; 
+    margin-right:3px;
+    padding-left:5px;
+    padding-right:5px; 
 }
 .wrapper-foods .text-box{
     background-color:#232429;
@@ -344,12 +346,12 @@ footer{
     width:100%;
     height:auto;
     text-align:center;
-    margin-left: 3px;
-    margin-right:3px;
 }
 .wrapper-foods-2 .text-box{
     background-color:#232429;
     box-shadow:0 1px 3px #00020b;
+    padding-left:5px;
+    padding-right:5px;
     margin:20px 20px 20px 20px;
 }
 .wrapper-foods-2 img{
