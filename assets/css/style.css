@@ -270,21 +270,29 @@ footer{
 .wrapper-form form {
     display: flex;
     flex-direction:column;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items:center;
-    background-color: #de721f;
+    background-color: #232429;
     margin-bottom: 5vh;
+    margin-right:10px;
+    margin-left:10px;
+    padding-top:5vh;
+    padding-left:5px;
+    padding-right:5px;
+    box-shadow:0 1px 3px #00020b;
 }
 .wrapper-form div input{
-    border:2px solid #232429;
-    width:100%;
+    border:2px solid #ababa1;
+    width:300px;
+    height:25px;
     padding:.375rem .75rem;
     line-height:1.6;
     background-clip:padding-box;
     border-radius:4px;
+    box-shadow:0 1px 3px #00020b
 }
 .wrapper-form div input:focus{
-    background-color:#ababa1;
+    background-color:hsl(0, 0%, 100%);
     border-color:#060300;
 }
 .wrapper-form .buttons button{
@@ -301,9 +309,10 @@ footer{
  background-color:#232429;
 }
 .wrapper-form form label {
-    color: #060300;
+    color: #ffffff;
     font-weight: bold;
 }
+
 
 /*About keto page*/
 .wrapper-foods {
@@ -481,20 +490,17 @@ div #my-read-more{
     box-shadow:0 1px 3px #00020b;
     margin:20px 20px 20px 20px;
 }
-.wrapper-foods-2 .pyramid{
-    margin-left:20px;
-}
-
     .wrapper-foods div {
         font-size: 1.2rem;
-        max-width:40vw;
+        max-width:48vw;
         color: #ffffff;
-        padding: 1vw;
+        padding-left:5px;
+        padding-right:5px;
     }
     .wrapper-foods-2 {
         display: flex;
         flex-direction:row;
-        justify-content:center;
+        justify-content:space-around;
         flex-wrap:wrap;
         text-align:center;
     }
@@ -509,7 +515,7 @@ div #my-read-more{
         width:100%;
         height:auto;
         max-width:40vw;
-        margin-top:5vh;
+        margin-top:10vh;
     }
     .wrapper-foods .box-1{
         margin-top:10vh;
@@ -537,6 +543,21 @@ div #my-read-more{
     }
 
     /*sign up page*/
+.wrapper-form form {
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    background-color: #232429;
+    margin-bottom: 5vh;
+    margin-right:100px;
+    margin-left:100px;
+    padding-top:5vh;
+    padding-left:5px;
+    padding-right:5px;
+    box-shadow:0 1px 3px #00020b;
+}
+
     .wrapper-form .buttons button{
     font-size:1.2rem;
     color:#232429;
@@ -583,9 +604,7 @@ div #my-read-more{
         margin-top:10vh;
         width:100%;
     }
-    .wrapper-foods-2 div .pyramid{
-        margin-left:70px;
-    }
+    
     img.keto-diet {
         margin-top:30vh;
         width: 100%;
@@ -601,7 +620,7 @@ div #my-read-more{
     }
     /*questions and answers*/
     .qanda{
-    border:3px solid #de721f;
+    box-shadow:0 1px 3px #00020b;
     margin-top:10px;
     margin-bottom:10px;
     padding-left:10px;
@@ -610,6 +629,22 @@ div #my-read-more{
     font-size:2rem;
     }
      /*sign up page*/
+.wrapper-form form {
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    background-color: #232429;
+    margin-bottom: 5vh;
+    margin-right:200px;
+    margin-left:200px;
+    padding-top:5vh;
+    padding-left:5px;
+    padding-right:5px;
+    box-shadow:0 1px 3px #00020b;
+}
+
+
     .wrapper-form .buttons button{
     font-size:2rem;
     color:#232429;
@@ -642,7 +677,7 @@ font-size:1.6rem;
 @media screen and (min-width:1850px){
     .wrapper-foods iframe {
         width: 750px;
-        height: 650px;
+        height: 450px;
         margin-top:12vh;
     }
 }
