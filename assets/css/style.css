@@ -608,7 +608,8 @@ div #my-read-more{
     }
     .wrapper-foods-2 .pyramid-chart{
         margin-top:10vh;
-        width:100%;
+        max-width:1000px;
+        max-height:2500px;
     }
     
     img.keto-diet {
